@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Montserrat } from "next/font/google";
+import { Montserrat, Quicksand, Cinzel_Decorative, Sankofa_Display, Audiowide, Marcellus_SC, Orbitron } from "next/font/google";
 import "./globals.css";
 
 const mont = Montserrat({ weight: "400", subsets: ["latin"] });

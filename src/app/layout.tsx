@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
-import { Montserrat, Quicksand, Cinzel_Decorative, Sankofa_Display, Audiowide, Marcellus_SC, Orbitron } from "next/font/google";
+import { quicksand } from "@/lib/fonts";
 import "./globals.css";
-
-const mont = Montserrat({ weight: "400", subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "J. R. Masias' Portfolio",
@@ -17,7 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${mont.className} antialiased bg-foreground text-primary`}
+        className={`${quicksand.className} antialiased bg-foreground text-primary`}
       >
         {children}
       </body>

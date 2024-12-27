@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { quicksand } from "@/lib/fonts";
 import "./globals.css";
+import NavHandler from "@/components/navHandler";
 
 export const metadata: Metadata = {
   title: "J. R. Masias' Portfolio",
@@ -17,6 +18,7 @@ export default function RootLayout({
       <body
         className={`${quicksand.className} antialiased bg-foreground text-primary`}
       >
+        <NavHandler />
         {children}
       </body>
     </html>
